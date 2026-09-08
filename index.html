@@ -4,52 +4,116 @@
     <title>Microplastic Project</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #07151f;
-            color: white;
+            color: #17324d;
+            min-height: 100vh;
+
+            background:
+                linear-gradient(
+                    to bottom,
+                    #f6d99a 0%,
+                    #f6d99a 35%,
+                    #76cbd8 35%,
+                    #299bb2 100%
+                );
+
             text-align: center;
         }
 
         .container {
-            max-width: 700px;
-            margin: 0 auto;
-            padding: 80px 25px;
+            max-width: 750px;
+            margin: auto;
+            padding: 70px 25px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 25px;
+            padding: 50px 35px;
+            box-shadow: 0 15px 40px rgba(0, 70, 90, 0.25);
+        }
+
+        .sun {
+            width: 85px;
+            height: 85px;
+            background: #f4b942;
+            border-radius: 50%;
+            margin: 0 auto 25px;
         }
 
         h1 {
             font-size: 42px;
-            margin-bottom: 10px;
+            margin: 0 0 15px;
+            color: #174b63;
         }
 
-        p {
-            color: #9db4bf;
-            font-size: 18px;
-            margin-bottom: 45px;
+        .subtitle {
+            font-size: 19px;
+            line-height: 1.6;
+            color: #55717d;
+            margin-bottom: 40px;
         }
 
         .button {
             display: block;
             padding: 20px;
-            margin: 20px auto;
+            margin: 18px auto;
             max-width: 450px;
-            border-radius: 12px;
+            border-radius: 14px;
             text-decoration: none;
-            font-size: 20px;
+            font-size: 19px;
             font-weight: bold;
-            background: #4cc9f0;
-            color: #07151f;
+            background: #287f96;
+            color: white;
+            transition: 0.2s;
         }
 
         .button:hover {
-            transform: scale(1.02);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 70, 90, 0.2);
         }
 
         .secondary {
-            background: #102b3a;
+            background: #f1c46b;
+            color: #17324d;
+        }
+
+        .description {
+            margin-top: 35px;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #66808a;
+        }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 12px;
             color: white;
-            border: 1px solid #1d4254;
+        }
+
+        @media (max-width: 600px) {
+
+            .container {
+                padding: 35px 15px;
+            }
+
+            .card {
+                padding: 35px 20px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .subtitle {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
@@ -58,20 +122,43 @@
 
     <div class="container">
 
-        <h1>Microplastic Project</h1>
+        <div class="card">
 
-        <p>
-            Investigating the Effect of Microplastics
-            on Marine Biodiversity
-        </p>
+            <div class="sun"></div>
 
-        <a class="button" href="https://docs.google.com/document/d/1wfVimY0cZ6Z_vzRAKLKaTur7lWlSVby4L6LXj3smQE4/edit?usp=sharing">
-            📄 READ THE DOCUMENT
-        </a>
+            <h1>Microplastic Project</h1>
 
-        <a class="button secondary" href="https://canva.link/cr3t43wftqqpmd7">
-            📊 VIEW THE SLIDES
-        </a>
+            <div class="subtitle">
+                Investigating the Effect of Microplastics
+                on Marine Biodiversity
+            </div>
+
+            <a
+                class="button"
+                href="https://docs.google.com/document/d/1wfVimY0cZ6Z_vzRAKLKaTur7lWlSVby4L6LXj3smQE4/edit?usp=sharing"
+                target="_blank"
+            >
+                READ THE DOCUMENT
+            </a>
+
+            <a
+                class="button secondary"
+                href="https://canva.link/cr3t43wftqqpmd7"
+                target="_blank"
+            >
+                VIEW THE SLIDES
+            </a>
+
+            <div class="description">
+                Explore the research, investigation, and findings
+                of this marine biodiversity project.
+            </div>
+
+        </div>
+
+        <div class="footer">
+            Marine Biodiversity Research Project
+        </div>
 
     </div>
 
